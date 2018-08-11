@@ -55,9 +55,9 @@ public class FunctionalLibrary {
 
 	public static WebDriver driverInit(String BrowserName) {
 
-		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\lib\\chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "D:\\JuneDelta\\src\\test\\resources\\lib\\geckodriver.exe");
 		if (BrowserName.equals("chrome")) {
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver();
 		}
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
